@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="multimedia/icon.png">
+
+    <style>
+        body{
+            background-color: #333333;
+            margin: 0;
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            background-color: #202020;
+            padding: 10px 1%;
+            border: 2px#4a4a4a;
+            position: sticky;
+            top: 0;
+        }
+        .nav-logo{
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            color: #d0d0d0;
+        }
+        .nav-logo img{
+            width: 35px;
+        }
+        .nav-logo h2{
+            font-weight: 400;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 35px;
+        }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            column-gap: 25px;
+        }
+        .nav-menu ul{
+            display: flex;
+            list-style: none;
+            column-gap: 25px;
+            font-size: 20px;
+        }
+        h1 {
+            color: #F2F2F2;
+            margin-left: 6px;
+            font-size: 40px;
+            font-family: "Bebas Neue", sans-serif;
+            
+        }
+        a:visited {
+            color: inherit;
+        }   
+        a{
+            text-decoration: none;
+        }
+        .volver {
+            font-size: 25px;
+            margin-left: 7px;
+        }
+        p{
+            margin-left: 8px;
+            font-size: 26px;
+            font-family: "Bebas Neue", sans-serif;
+            color: #CFCAC4;
+            margin-right: 8px;
+        }
+        img{
+            margin-left: 8px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-logo">
+            <img src="multimedia/iconPython.png" alt="">
+            <h2>Algoritmos</h2>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#bubble">Bubble</a></li>
+                <li><a href="#insertion">Insertion</a></li>
+                <li><a href="#selection">Selection</a></li>
+                <li><a href="#quick">Quick</a></li>
+                <li><a href="#merge">Merge</a></li>
+                <li><a href="index.html">Visualizador</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="bubble"></section>
+    <section>
+        <h1>Bubble Sort (Ordenamiento de Burbuja)</h1>
+            <p>
+                El Bubble Sort compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto. Repite este proceso hasta
+                que la lista está ordenada. Los elementos "más grandes" van subiendo como burbujas al final de la lista en cada pasada. <p> Base: Comparación e intercambio de vecinos.  </p> 
+            </p>
+            <img src="multimedia/gifs/BubbleSort.gif" alt="">
+            <hr>
+    </section>
+    <section id="insertion"></section>
+        <section>
+        <h1>Insertion Sort (Ordenamiento por Inserción)</h1>
+            <p>
+                El Insertion Sort construye la lista ordenada de a un elemento a la vez. Recorre la lista, tomando un elemento y colocándolo en su posición 
+                correcta dentro de la parte de la lista que ya está ordenada. Es similar a ordenar cartas en la mano. <p>Base: Inserción de un elemento en su lugar correcto dentro de una sublista ya ordenada.</p>
+            </p>
+            <img src="multimedia/gifs/InsertionSort.gif" alt="">
+            <hr>
+    </section>
+    <section id="selection"></section>
+        <section>
+        <h1>Selection Sort (Ordenamiento por Selección) </h1>
+        <p>El Selection Sort divide la lista en una parte ordenada y una no ordenada. En cada paso, encuentra el elemento más pequeño 
+            (o más grande) de la parte no ordenada y lo intercambia con el primer elemento de la parte no ordenada, 
+            moviéndolo al final de la parte ordenada. <p>Base: Selección del mínimo (o máximo) y colocación al inicio de la sublista no ordenada.</p>
+        </p>
+        <img src="multimedia/gifs/SelectionSort.gif" alt="">
+        <hr>
+    </section>
+    <section id="quick"></section>
+        <section>
+        <h1>Quick Sort (Ordenamiento Rápido)</h1>
+        <p>
+            El Quick Sort es un algoritmo eficiente que utiliza la estrategia Divide y Vencerás. Elige un elemento como pivote y particiona los demás elementos
+             en dos sublistas: aquellos menores que el pivote y aquellos mayores. Luego, aplica recursivamente el mismo proceso a las dos sublistas.
+             <p>Base: Partición de la lista alrededor de un elemento pivote.</p> 
+        </p>
+        <img src="multimedia/gifs/QuickSort.gif" alt="">
+        <hr>
+    </section>
+    <section id="merge"></section>
+        <section>
+        <h1>Merge Sort (Ordenamiento por Fusión)</h1>
+        <p>
+            El Merge Sort también usa Divide y Vencerás. Divide recursivamente la lista a la mitad hasta que solo quedan elementos 
+            individuales (que por definición están ordenados). Luego, fusiona (combina) estas sublistas ordenadas 
+            para producir sublistas ordenadas más grandes hasta que solo queda una lista, que es la lista original ordenada. <p>Base: Fusión de sublistas ordenadas de forma eficiente</p>
+        </p>
+        <img src="multimedia/gifs/MergeSort.gif" alt="">
+    </section>
+</body>
+</html>
